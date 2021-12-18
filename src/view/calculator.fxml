@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.CalculatorController" spacing="10"
+      alignment="CENTER" prefWidth="500" prefHeight="300">
+    <Label text="Decimal"/>
+    <HBox alignment="BOTTOM_CENTER">
+        <TextField fx:id="d1Tf"/>
+        <Label text="."/>
+        <TextField fx:id="d2Tf"/>
+        <Label text="."/>
+        <TextField fx:id="d3Tf"/>
+        <Label text="."/>
+        <TextField fx:id="d4Tf"/>
+    </HBox>
+
+    <Label text="Binary"/>
+    <HBox alignment="BOTTOM_CENTER">
+        <TextField fx:id="b1Tf"/>
+        <Label text="."/>
+        <TextField fx:id="b2Tf"/>
+        <Label text="."/>
+        <TextField fx:id="b3Tf"/>
+        <Label text="."/>
+        <TextField fx:id="b4Tf"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="To Decimal" onAction="#toDecimalHandler"/>
+        <Button text="To Binary" alignment="CENTER_LEFT" onAction="#toBinaryHandler"/>
+    </HBox>
+    <Button text="Reset" onAction="#resetHandler"/>
+
+</VBox>
